@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Alouda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(120deg, #ff69b4, #32cd32);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .team {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .card {
+      flex: 1 1 220px;
+      max-width: 250px;
+      background-color: #f8f8f8;
+      border-left: 6px solid #ff69b4;
+      border-radius: 10px;
+      padding: 20px 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      border-left: 6px solid #32cd32;
+      transform: translateY(-4px);
+    }
+
+
+    .name {
+      font-size: 1.3rem;
+      color: #32cd32;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .badge {
+      background: #ff69b4;
+      color: white;
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: #f1f1f1;
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 1000px) {
+      .card {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-alouda.png" alt="Logo Team Alouda">
+  <h1>Team Alouda</h1>
+  <p>L'élite du style, la crème du flow, l’attaque finale dans ton projet ✨🧋</p>
+</header>
+
+<section class="team">
+  <div class="card" data-aos="fade-up">
+    <div class="name">Dimitri</div>
+    <div class="badge">Le stratège</div>
+    <div class="desc">Le stratège au calme glacé, toujours deux coups d’avance. Il planifie pendant que les autres paniquent.</div>
+  </div>
+  <div class="card" data-aos="fade-up" data-aos-delay="100">
+    <div class="name">Karen</div>
+    <div class="badge">L’âme de la team</div>
+    <div class="desc">La reine du feu sacré. Elle motive, elle agit, elle brille. C’est l’âme de la team.</div>
+  </div>
+  <div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="name">Carmen</div>
+    <div class="badge">Toujours là</div>
+    <div class="desc">Elle est là quoi, toujours présente. Le genre de membre qu’on peut appeler à 3h du mat sans stress.</div>
+  </div>
+  <div class="card" data-aos="fade-up" data-aos-delay="300">
+    <div class="name">Yeshnav</div>
+    <div class="badge">Le cerveau</div>
+    <div class="desc">Le cerveau de l’équipe, il comprend tout avant même qu’on parle. Zéro filtre, 100% vérité brute.</div>
+  </div>
+</section>
+
+<footer>
+  Créé par <strong>Team Alouda</strong> — 2025
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
